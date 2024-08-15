@@ -41,8 +41,8 @@ fn main() {
     }
 }
 
-fn factor(number: u128) -> Vec<u8> {
-    let mut factor_vec: Vec<u8> = Vec::new();
+fn factor(number: u128) -> Vec<u128> {
+    let mut factor_vec: Vec<u128> = Vec::new();
     for i in 1..number {
         if number % i == 0 {
             factor_vec.push(i);
